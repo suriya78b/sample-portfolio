@@ -15,6 +15,9 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+
+
+
 :root {
 
   /**
@@ -750,6 +753,7 @@ main {
 
 .clients-item img {
   width: 100%;
+  height: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -770,6 +774,26 @@ main {
 /**
  * education and experience 
  */
+
+ .experience-list, .experience-list li {
+  list-style: disc !important; /* Ensures bullet points are displayed */
+  margin-left: 5px;
+  /* Adds indentation for bullets */
+}
+
+.experience-list ul {
+  list-style: circle !important; /* Nested lists use circle bullets */
+  margin-left: 20px !important;
+}
+
+.experience-list li {
+  color: var(--white-1) !important; /* Ensures the font color is white */
+}
+
+.experience-list li::marker {
+  content: "• "; /* Custom bullet point */
+  color: var(--white-1); /* Ensures the bullet color is white */
+}
 
 .timeline { margin-bottom: 30px; }
 
